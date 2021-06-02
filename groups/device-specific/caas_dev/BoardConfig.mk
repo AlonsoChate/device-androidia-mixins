@@ -27,6 +27,12 @@ BOARD_FLASHFILES += $(PRODUCT_OUT)/scripts/setup_lg_client.sh
 BOARD_FLASHFILES += $(PRODUCT_OUT)/scripts/LG_B1_Client
 BOARD_FLASHFILES += $(PRODUCT_OUT)/scripts/lg_example.sh
 
+BOARD_FLASHFILES += $(PRODUCT_OUT)/scripts/stream
+BOARD_FLASHFILES += $(PRODUCT_OUT)/scripts/libvhal-client.so
+
+BOARD_FLASHFILES += $(PRODUCT_OUT)/scripts/IntelCameraService
+BOARD_FLASHFILES += $(PRODUCT_OUT)/scripts/0001-Netlink-sync.patch
+
 # for USB OTG WA
 BOARD_SEPOLICY_DIRS += $(INTEL_PATH_SEPOLICY)/bxt_usb
 

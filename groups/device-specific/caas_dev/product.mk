@@ -64,3 +64,8 @@ PRODUCT_COPY_FILES += device/intel/civ/host/vm-manager/scripts/LG_B1_Client:$(PR
 PRODUCT_COPY_FILES += device/intel/civ/host/vm-manager/scripts/lg_example.sh:$(PRODUCT_OUT)/scripts/lg_example.sh
 PRODUCT_COPY_FILES += vendor/intel/utils_priv/bsp_diff/caas_dev/vendor/intel/external/hwcomposer-intel/vendor/lib64/hw/hwcomposer.remote.so:vendor/lib64/hw/hwcomposer.remote.so
 PRODUCT_COPY_FILES += vendor/intel/utils_priv/bsp_diff/caas_dev/vendor/intel/external/hwcomposer-intel/vendor/lib/hw/hwcomposer.remote.so:vendor/lib/hw/hwcomposer.remote.so
+PRODUCT_COPY_FILES += $(LOCAL_PATH)/camera_sharing_bin/IntelCameraService:$(PRODUCT_OUT)/scripts/IntelCameraService
+PRODUCT_COPY_FILES += $(LOCAL_PATH)/camera_sharing_bin/0001-Netlink-sync.patch:$(PRODUCT_OUT)/scripts/0001-Netlink-sync.patch
+PRODUCT_COPY_FILES += $(LOCAL_PATH)/camera_sharing_bin/stream:$(PRODUCT_OUT)/scripts/stream
+PRODUCT_COPY_FILES += $(LOCAL_PATH)/camera_sharing_bin/libvhal-client.so:$(PRODUCT_OUT)/scripts/libvhal-client.so
+
