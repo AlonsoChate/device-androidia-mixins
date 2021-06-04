@@ -26,6 +26,7 @@ BOARD_FLASHFILES += $(PRODUCT_OUT)/scripts/rpmb_dev
 BOARD_FLASHFILES += $(PRODUCT_OUT)/scripts/setup_lg_client.sh
 BOARD_FLASHFILES += $(PRODUCT_OUT)/scripts/LG_B1_Client
 BOARD_FLASHFILES += $(PRODUCT_OUT)/scripts/lg_example.sh
+BOARD_FLASHFILES += $(PRODUCT_OUT)/scripts/lg-input-manager
 
 BOARD_FLASHFILES += $(PRODUCT_OUT)/scripts/stream
 BOARD_FLASHFILES += $(PRODUCT_OUT)/scripts/libvhal-client.so
