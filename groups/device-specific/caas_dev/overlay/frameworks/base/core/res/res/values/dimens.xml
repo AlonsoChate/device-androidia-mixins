@@ -22,4 +22,7 @@
     <!-- Height of the bottom navigation bar in landscape -->
     <dimen name="navigation_bar_height_landscape">0dp</dimen>
 
+    <!-- Width of the navigation bar when it is placed vertically on the screen -->
+    <dimen name="navigation_bar_width">0dp</dimen>
+
 </resources>
