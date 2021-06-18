@@ -13,5 +13,12 @@ PRODUCT_PACKAGES += android.hardware.camera.provider@2.4-external-service \
 
 # Only include test apps in eng or userdebug builds.
 PRODUCT_PACKAGES_DEBUG += TestingCamera
+PRODUCT_PROPERTY_OVERRIDES += ro.vendor.remote.sf.fake_camera ="both" \
+                              ro.vendor.camera.in_frame_format.h264=false \
+                              ro.vendor.camera.in_frame_format.i420=true \
+                              ro.vendor.camera.decode.vaapi=false \
+                              ro.vendor.remote.sf.back_camera_hal= \
+                              ro.vendor.remote.sf.front_camera_hal= \
+                              ro.vendor.camera.transference="VSOCK"
 
 PRODUCT_PACKAGES += MultiCameraApp
