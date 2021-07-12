@@ -27,6 +27,7 @@ PRODUCT_PACKAGES += android.hardware.keymaster@3.0-impl \
                     android.hardware.graphics.allocator@4.0-service.minigbm \
                     android.hardware.renderscript@1.0-impl \
                     android.hardware.graphics.composer@2.4-service
+PRODUCT_PACKAGES += PenguinPeakUtils
 
 
 PRODUCT_PROPERTY_OVERRIDES += ro.control_privapp_permissions=enforce
