@@ -107,7 +107,12 @@ endif
 BOARD_KERNEL_CMDLINE += iTCO_wdt.stop_on_shutdown=0
 {{/run_tco_on_shutdown}}
 
+{{#multi_user_support}}
+BOARD_SEPOLICY_DIRS += $(INTEL_PATH_SEPOLICY)/boot-arch/multiuser
+MULTI_USER_SUPPORT := true
+{{/multi_user_support}}
 BOARD_SEPOLICY_DIRS += $(INTEL_PATH_SEPOLICY)/boot-arch/generic
+
 {{#slot-ab}}
 BOARD_SEPOLICY_DIRS += $(INTEL_PATH_SEPOLICY)/abota/generic
 BOARD_SEPOLICY_DIRS += $(INTEL_PATH_SEPOLICY)/abota/efi
